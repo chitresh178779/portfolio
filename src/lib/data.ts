@@ -2,10 +2,10 @@ export const personalInfo = {
   name: "Chitresh Gurjar",
   tagline: "AI/ML Engineer & Full-Stack Developer",
   description: "3rd Year B.Tech Computer Science student specializing in AI/ML and Full-Stack Development. Building intelligent systems that bridge the gap between cutting-edge AI and production-ready applications.",
-  email: "chitresh.gurjar8779@gmail.com",
+  email: "chitresh.gurjar.work@gmail.com",
   phone: "+91 7828227301",
   github: "https://github.com/Chitresh178779",
-  linkedin: "https://linkedin.com/in/Chitresh-Gurjar",
+  linkedin: "https://www.linkedin.com/in/chitresh-gurjar-aa2a23304",
   location: "Indore, M.P., India",
 };
 
