@@ -1,26 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-cream: #efece6;
+  --color-cream-dark: #e5e1d8;
+  --color-black: #0a0a0a;
+  --color-dark: #141414;
+  --color-dark-card: #1a1a1a;
+  --color-dark-surface: #222222;
+  --color-text-dark: #1a1a1a;
+  --color-text-light: #efece6;
+  --color-text-muted-light: #8a8579;
+  --color-text-muted-dark: #7a7a7a;
+  --color-divider-light: #d5d0c7;
+  --color-divider-dark: #2a2a2a;
+  --font-sans: 'Plus Jakarta Sans', 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --font-heading: 'Plus Jakarta Sans', 'Inter', sans-serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
+  background-color: var(--color-black);
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+  -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+  background-color: var(--color-cream);
+  color: var(--color-text-dark);
+  overflow-x: hidden;
+  cursor: none;
+}
+
+/* Custom Scrollbar - Hidden */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Selection */
+::selection {
+  background: rgba(26, 26, 26, 0.2);
+  color: #1a1a1a;
+}
+
+/* Hide cursor on touch devices */
+@media (pointer: coarse) {
+  body {
+    cursor: auto;
+  }
+}
+
+/* Section transitions */
+.section-dark {
+  background-color: var(--color-black);
+  color: var(--color-text-light);
+}
+
+.section-cream {
+  background-color: var(--color-cream);
+  color: var(--color-text-dark);
+}
+
+/* Large editorial heading styles */
+.heading-display {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: -0.03em;
+  line-height: 0.85;
+}
+
+.heading-section {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  line-height: 0.95;
+}
+
+/* Divider */
+.divider-light {
+  border-top: 1px solid var(--color-divider-light);
+}
+
+.divider-dark {
+  border-top: 1px solid var(--color-divider-dark);
+}
+
+/* Terminal cursor blink */
+@keyframes blink {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
+.terminal-cursor {
+  animation: blink 1s step-end infinite;
+}
+
+/* Smooth text reveal */
+@keyframes slideUp {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Rounded pill button */
+.btn-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 32px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.875rem;
+  letter-spacing: 0.02em;
+  transition: all 0.3s ease;
+}
+
+.btn-dark {
+  background-color: var(--color-black);
+  color: var(--color-cream);
+}
+
+.btn-dark:hover {
+  background-color: #2a2a2a;
+}
+
+.btn-light {
+  background-color: var(--color-cream);
+  color: var(--color-black);
+}
+
+.btn-light:hover {
+  background-color: var(--color-cream-dark);
+}
+
+.btn-outline-dark {
+  border: 1px solid var(--color-text-dark);
+  color: var(--color-text-dark);
+  background: transparent;
+}
+
+.btn-outline-dark:hover {
+  background-color: var(--color-text-dark);
+  color: var(--color-cream);
+}
+
+.btn-outline-light {
+  border: 1px solid var(--color-text-light);
+  color: var(--color-text-light);
+  background: transparent;
+}
+
+.btn-outline-light:hover {
+  background-color: var(--color-text-light);
+  color: var(--color-black);
+}
+
+/* Numbered items */
+.numbered::before {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  opacity: 0.5;
 }
