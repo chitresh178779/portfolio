@@ -36,7 +36,7 @@ export default function SectionWrapper({ children, className = "", delay = 0 }: 
                     scrollTrigger: {
                         trigger: wrapperRef.current,
                         start: "top 85%",
-                        toggleActions: "play none none reverse",
+                        toggleActions: "play reverse play reverse",
                     },
                 }
             );

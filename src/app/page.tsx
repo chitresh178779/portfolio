@@ -24,7 +24,7 @@ export default function Home() {
 
       <ScrollProgress />
 
-      <div className="sticky top-0 h-screen z-0">
+      <div className="sticky top-0 h-[100dvh] z-0">
         <HeroSection />
       </div>
 

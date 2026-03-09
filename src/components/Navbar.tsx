@@ -21,11 +21,11 @@ export default function Navbar() {
                 animate={{ y: 0 }}
                 transition={{ duration: 0.6, ease: "easeOut" }}
                 className={`pointer-events-auto transition-all duration-500 rounded-full relative ${isScrolled
-                    ? "bg-[#111111]/80 backdrop-blur-xl py-4 md:py-5 px-8 md:px-12 border border-white/10 shadow-[0_8px_32px_0_rgba(0,0,0,0.3)]"
-                    : "bg-[#1a1a1a]/60 backdrop-blur-md py-4 md:py-5 px-8 md:px-12 border border-white/10 shadow-[0_8px_32px_0_rgba(0,0,0,0.3)]"
+                    ? "bg-[#111111]/80 backdrop-blur-xl py-4 md:py-5 px-6 sm:px-8 md:px-12 border border-white/10 shadow-[0_8px_32px_0_rgba(0,0,0,0.3)]"
+                    : "bg-[#1a1a1a]/60 backdrop-blur-md py-4 md:py-5 px-6 sm:px-8 md:px-12 border border-white/10 shadow-[0_8px_32px_0_rgba(0,0,0,0.3)]"
                     }`}
             >
-                <div className="flex items-center justify-center gap-6 md:gap-12">
+                <div className="flex items-center justify-center gap-4 sm:gap-6 md:gap-12">
                     {/* Desktop & Mobile Links (clean, minimal, centered) */}
                     <div className="hidden md:flex items-center justify-center gap-8 lg:gap-12">
                         {navLinks.map((link) => (

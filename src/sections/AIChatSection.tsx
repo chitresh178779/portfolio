@@ -44,11 +44,11 @@ export default function AIChatSection() {
     };
 
     return (
-        <section id="chat" className="section-dark py-[80px] md:py-[120px] px-8 md:px-12 border-t border-[#2a2a2a] overflow-hidden relative z-10">
+        <section id="chat" className="section-dark py-[60px] md:py-[120px] px-8 sm:px-12 md:px-[8vw] lg:px-[10vw] xl:px-[12vw] 2xl:px-[14vw] border-t border-[#2a2a2a] overflow-hidden relative z-10">
             <div className="max-w-[1200px] mx-auto">
                 <SectionWrapper>
                     <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-16">
-                        <div className="heading-section text-3xl md:text-5xl lg:text-6xl tracking-widest leading-[0.85] flex flex-col">
+                        <div className="heading-section text-[2.5rem] sm:text-4xl md:text-5xl lg:text-6xl tracking-widest leading-[0.85] flex flex-col">
                             <RevealText text="PORTFOLIO AI" />
                             {/* <RevealText text="AI /" delay={0.4} /> */}
                         </div>
@@ -77,7 +77,7 @@ export default function AIChatSection() {
 
                     <div className="md:col-span-7">
                         <SectionWrapper delay={0.2}>
-                            <div className="bg-[#141414] border border-[#2a2a2a] rounded-xl overflow-hidden flex flex-col h-[400px] shadow-2xl">
+                            <div className="bg-[#141414] border border-[#2a2a2a] rounded-xl overflow-hidden flex flex-col h-[350px] sm:h-[400px] shadow-2xl">
                                 {/* Sleek macOS style Header */}
                                 <div className="flex items-center justify-between px-4 py-3 border-b border-[#2a2a2a] bg-[#0a0a0a]">
                                     <div className="flex gap-2">

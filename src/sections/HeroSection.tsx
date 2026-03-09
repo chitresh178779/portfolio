@@ -47,7 +47,7 @@ export default function HeroSection() {
     );
 
     return (
-        <section ref={heroRef} id="hero" className="section-cream h-screen flex flex-col justify-between pt-28 pb-8 px-8 sm:px-16 md:px-24 lg:px-32 xl:px-48 2xl:px-64 overflow-hidden">
+        <section ref={heroRef} id="hero" className="section-cream min-h-[100dvh] flex flex-col justify-between pt-28 pb-12 px-8 sm:px-12 md:px-[8vw] lg:px-[10vw] xl:px-[12vw] 2xl:px-[14vw] overflow-hidden">
             <div className="max-w-[1400px] w-full mx-auto flex-1 flex flex-col justify-center">
 
                 {/* Massive Name Typography */}
@@ -59,7 +59,7 @@ export default function HeroSection() {
                     </h1>
                     <div className="flex items-center justify-end gap-4 md:gap-8 -mt-2 md:-mt-4 lg:-mt-8">
                         {/* Profile Image Circle */}
-                        <div className="hero-bottom-item opacity-0 relative w-[26vw] h-[26vw] md:w-[200px] md:h-[200px] lg:w-[250px] lg:h-[250px] rounded-full overflow-hidden shadow-2xl border-[3px] md:border-[6px] border-[#ede9e3] flex-shrink-0 z-10 box-border">
+                        <div className="hero-bottom-item opacity-0 relative w-[30vw] h-[30vw] sm:w-[26vw] sm:h-[26vw] md:w-[200px] md:h-[200px] lg:w-[250px] lg:h-[250px] rounded-full overflow-hidden shadow-2xl border-[3px] md:border-[6px] border-[#ede9e3] flex-shrink-0 z-10 box-border animate-float md:animate-none">
                             <Image
                                 src="/profile.jpg"
                                 alt="Chitresh Gurjar"
@@ -77,7 +77,7 @@ export default function HeroSection() {
                 </div>
 
                 {/* Bottom Content Row */}
-                <div className="flex flex-col md:flex-row items-end justify-between gap-12 mt-auto">
+                <div className="flex flex-col md:flex-row items-end md:items-end justify-between gap-8 md:gap-12 mt-auto">
                     {/* Arrow */}
                     <div className="hero-bottom-item hidden md:block opacity-0">
                         <ArrowDownRight size={48} strokeWidth={1} className="text-[#1a1a1a]" />
@@ -98,7 +98,8 @@ export default function HeroSection() {
                         <p className="font-mono text-[10px] md:text-xs text-[#8a8579] uppercase tracking-widest mb-1">
                             Available for work
                         </p>
-                        <p className="heading-display text-4xl md:text-6xl lg:text-8xl">
+                        <p className="heading-display text-[2.5rem] sm:text-4xl md:text-6xl lg:text-8xl flex items-center gap-2 justify-end">
+                            <span className="w-2 h-2 sm:w-3 sm:h-3 rounded-full bg-[#1a1a1a] animate-pulse-glow hidden sm:inline-block"></span>
                             NOW
                         </p>
                     </div>

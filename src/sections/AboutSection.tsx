@@ -7,7 +7,7 @@ export default function AboutSection() {
     return (
         <section
             id="about"
-            className="section-dark mt-16 md:mt-24 py-[80px] md:py-[120px] px-8 sm:px-16 md:px-24 lg:px-32 xl:px-48 2xl:px-64 overflow-hidden relative z-10"
+            className="section-dark mt-16 md:mt-24 py-[60px] md:py-[120px] px-8 sm:px-12 md:px-[8vw] lg:px-[10vw] xl:px-[12vw] 2xl:px-[14vw] overflow-hidden relative z-10"
         >
             <div className="max-w-[1400px] w-full mx-auto">
 
@@ -15,7 +15,7 @@ export default function AboutSection() {
                 <SectionWrapper>
                     <RevealText
                         text="WHAT I DO /"
-                        className="heading-display text-5xl md:text-6xl lg:text-7xl tracking-tight mb-16 md:mb-24 text-[#efece6]"
+                        className="heading-display text-[2.5rem] sm:text-5xl md:text-6xl lg:text-7xl tracking-tight mb-12 sm:mb-16 md:mb-24 text-[#efece6]"
                     />
                 </SectionWrapper>
 
@@ -49,9 +49,9 @@ export default function AboutSection() {
 
                     {/* Service 1 */}
                     <SectionWrapper delay={0.2}>
-                        <div className="grid md:grid-cols-12 gap-6 md:gap-8 py-12 md:py-16 border-b border-[#2a2a2a] mb-8 md:mb-12 group cursor-default">
+                        <div className="grid md:grid-cols-12 gap-6 md:gap-8 py-10 md:py-16 border-b border-[#2a2a2a] mb-8 md:mb-12 group cursor-default">
                             <div className="md:col-span-6 flex md:justify-end md:pr-16 items-start">
-                                <span className="heading-display text-3xl md:text-4xl text-[#efece6]/50 group-hover:text-white transition-colors duration-500 font-bold tracking-tighter">
+                                <span className="heading-display text-3xl md:text-4xl text-[#efece6]/50 group-hover:text-white transition-colors duration-500 font-bold tracking-tighter sm:mb-2">
                                     (01)
                                 </span>
                             </div>
@@ -72,9 +72,9 @@ export default function AboutSection() {
 
                     {/* Service 2 */}
                     <SectionWrapper delay={0.3}>
-                        <div className="grid md:grid-cols-12 gap-6 md:gap-8 py-12 md:py-16 border-b border-[#2a2a2a] mb-8 md:mb-12 group cursor-default">
+                        <div className="grid md:grid-cols-12 gap-6 md:gap-8 py-10 md:py-16 border-b border-[#2a2a2a] mb-8 md:mb-12 group cursor-default">
                             <div className="md:col-span-6 flex md:justify-end md:pr-16 items-start">
-                                <span className="heading-display text-3xl md:text-4xl text-[#efece6]/50 group-hover:text-white transition-colors duration-500 font-bold tracking-tighter">
+                                <span className="heading-display text-3xl md:text-4xl text-[#efece6]/50 group-hover:text-white transition-colors duration-500 font-bold tracking-tighter sm:mb-2">
                                     (02)
                                 </span>
                             </div>
@@ -95,9 +95,9 @@ export default function AboutSection() {
 
                     {/* Service 3 */}
                     <SectionWrapper delay={0.4}>
-                        <div className="grid md:grid-cols-12 gap-6 md:gap-8 py-12 md:py-16 border-b border-[#2a2a2a] group cursor-default">
+                        <div className="grid md:grid-cols-12 gap-6 md:gap-8 py-10 md:py-16 border-b border-[#2a2a2a] group cursor-default">
                             <div className="md:col-span-6 flex md:justify-end md:pr-16 items-start">
-                                <span className="heading-display text-3xl md:text-4xl text-[#efece6]/50 group-hover:text-white transition-colors duration-500 font-bold tracking-tighter">
+                                <span className="heading-display text-3xl md:text-4xl text-[#efece6]/50 group-hover:text-white transition-colors duration-500 font-bold tracking-tighter sm:mb-2">
                                     (03)
                                 </span>
                             </div>

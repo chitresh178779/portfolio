@@ -56,13 +56,13 @@ export default function ContactSection() {
     return (
         <section
             id="contact"
-            className="section-dark mt-16 md:mt-24 py-[100px] md:py-[160px] px-8 sm:px-16 md:px-24 lg:px-32 xl:px-48 2xl:px-64 border-t border-[#2a2a2a] overflow-hidden relative z-10 flex flex-col items-center justify-center min-h-screen"
+            className="section-dark mt-16 md:mt-24 py-[60px] md:py-[160px] px-8 sm:px-12 md:px-[8vw] lg:px-[10vw] xl:px-[12vw] 2xl:px-[14vw] border-t border-[#2a2a2a] overflow-hidden relative z-10 flex flex-col items-center justify-center min-h-[100dvh]"
         >
             <div className="max-w-[1100px] w-full flex flex-col items-center justify-center text-center mx-auto">
                 {/* Hero Heading */}
                 <div className="w-full flex flex-col items-center justify-center mb-16 md:mb-24 text-center mx-auto">
                     <SectionWrapper className="flex flex-col items-center justify-center w-full text-center mx-auto">
-                        <div className="heading-section text-[8vw] md:text-6xl lg:text-7xl leading-[0.85] tracking-tighter text-[#efece6] flex flex-col items-center justify-center text-center w-full mx-auto">
+                        <div className="heading-section text-[12vw] sm:text-[8vw] md:text-6xl lg:text-7xl leading-[0.85] tracking-tighter text-[#efece6] flex flex-col items-center justify-center text-center w-full mx-auto">
                             <RevealText text="LET'S MAKE" className="mx-auto text-center" />
                             <RevealText text=" IT HAPPEN" delay={0.1} className="mx-auto text-center" />
                         </div>
@@ -73,7 +73,7 @@ export default function ContactSection() {
                 <div className="w-full flex flex-col items-center justify-center mt-16 md:mt-24 text-center mx-auto">
                     <SectionWrapper delay={0.2} className="w-full max-w-[650px] mx-auto">
                         <motion.div
-                            className="w-full rounded-2xl p-8 md:p-10 flex flex-col items-center text-center"
+                            className="w-full rounded-2xl p-6 sm:p-8 md:p-10 flex flex-col items-center text-center"
                             style={{
                                 background: "rgba(255, 255, 255, 0.04)",
                                 backdropFilter: "blur(12px)",
@@ -276,8 +276,8 @@ export default function ContactSection() {
             </div>
             <br></br>
             {/* Footer */}
-            <div className="max-w-[1200px] w-full mx-auto mt-32 md:mt-48 pt-8 pb-12 border-t border-[#2a2a2a]">
-                <div className="flex flex-col flex-col-reverse md:flex-row items-center justify-between gap-8 font-mono text-sm text-[#7a7a7a]">
+            <div className="max-w-[1200px] w-full mx-auto mt-24 sm:mt-32 md:mt-48 pt-8 pb-12 border-t border-[#2a2a2a]">
+                <div className="flex flex-col md:flex-row items-center justify-between gap-8 font-mono text-xs sm:text-sm text-[#7a7a7a]">
                     {/* Copyright */}
                     <div className="flex-1 md:text-left text-center">
                         © {new Date().getFullYear()} {personalInfo.name}
