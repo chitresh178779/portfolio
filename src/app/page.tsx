@@ -8,6 +8,7 @@ import SkillsSection from "@/sections/SkillsSection";
 import ProjectsSection from "@/sections/ProjectsSection";
 import GitHubStatsSection from "@/sections/GitHubStatsSection";
 import AchievementsSection from "@/sections/AchievementsSection";
+import CertificatesSection from "@/sections/CertificatesSection";
 import AIChatSection from "@/sections/AIChatSection";
 import ContactSection from "@/sections/ContactSection";
 import ScrollProgress from "@/components/ScrollProgress";
@@ -34,6 +35,7 @@ export default function Home() {
         <ProjectsSection />
         <GitHubStatsSection />
         <AchievementsSection />
+        <CertificatesSection />
         <AIChatSection />
         <ContactSection />
       </div>

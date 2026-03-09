@@ -3,7 +3,7 @@ import { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import Image from "next/image";
-import { ArrowDownRight } from "lucide-react";
+import { ArrowDownRight, Download } from "lucide-react";
 import { personalInfo } from "@/lib/data";
 import SectionWrapper from "@/components/SectionWrapper";
 
@@ -88,9 +88,23 @@ export default function HeroSection() {
                         <p className="text-[#4a4a4a] text-lg md:text-xl font-medium leading-relaxed mb-8">
                             I build fast, intelligent systems that bridge the gap between cutting-edge AI and production-ready applications.
                         </p>
-                        <a href="#contact" className="btn-pill btn-dark uppercase font-bold tracking-widest text-xs">
-                            Contact <ArrowDownRight size={16} />
-                        </a>
+                        <div className="flex flex-wrap items-center gap-4">
+                            <a href="#contact" className="btn-pill btn-dark uppercase font-bold tracking-widest text-xs">
+                                Contact <ArrowDownRight size={16} />
+                            </a>
+                            <a 
+                                href={personalInfo.resume} 
+                                target="_blank" 
+                                rel="noreferrer" 
+                                className="btn-pill group relative overflow-hidden border border-[#1a1a1a] uppercase font-bold tracking-widest text-xs transition-shadow hover:shadow-xl text-[#1a1a1a]"
+                            >
+                                <span className="absolute inset-0 bg-[#1a1a1a] translate-y-[100%] group-hover:translate-y-0 transition-transform duration-500 ease-[cubic-bezier(0.19,1,0.22,1)] origin-bottom"></span>
+                                <span className="relative z-10 group-hover:text-[#efece6] transition-colors duration-300 flex items-center gap-2">
+                                    Resume 
+                                    <Download size={16} className="group-hover:translate-y-0.5 group-hover:scale-110 transition-transform duration-300" />
+                                </span>
+                            </a>
+                        </div>
                     </div>
 
                     {/* Availability Tag */}

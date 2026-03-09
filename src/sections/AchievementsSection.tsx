@@ -5,7 +5,7 @@ import { achievements } from "@/lib/data";
 
 export default function AchievementsSection() {
     return (
-        <section id="achievements" className="section-dark mt-16 md:mt-24 py-[60px] md:py-[120px] px-8 sm:px-12 md:px-[8vw] lg:px-[10vw] xl:px-[12vw] 2xl:px-[14vw] border-t border-[#2a2a2a] overflow-hidden relative z-10">
+        <section id="achievements" className="section-dark mt-16 md:mt-24 py-[60px] md:py-[120px] px-12 sm:px-20 md:px-32 lg:px-40 xl:px-56 2xl:px-72 border-t border-[#2a2a2a] overflow-hidden relative z-10">
             <div className="max-w-[1400px] w-full mx-auto">
                 <SectionWrapper>
                     <RevealText

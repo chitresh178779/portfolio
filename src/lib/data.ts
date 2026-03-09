@@ -1,12 +1,13 @@
 export const personalInfo = {
   name: "Chitresh Gurjar",
-  tagline: "AI/ML Engineer & Full-Stack Developer",
+  tagline: "Full-Stack Developer",
   description: "3rd Year B.Tech Computer Science student specializing in AI/ML and Full-Stack Development. Building intelligent systems that bridge the gap between cutting-edge AI and production-ready applications.",
   email: "chitresh.gurjar.work@gmail.com",
   phone: "+91 7828227301",
   github: "https://github.com/Chitresh178779",
   linkedin: "https://www.linkedin.com/in/chitresh-gurjar-aa2a23304",
   location: "Indore, M.P., India",
+  resume: "https://drive.google.com/file/d/14h-ho9FIwLZGBBEPLP16hdraxueLt4vk/view?usp=sharing", // Update this path to your actual resume file in the public folder
 };
 
 export const education = [
@@ -99,6 +100,11 @@ export const achievements = [
     role: "Participant – AI Model Developer",
     icon: "brain",
   },
+  {
+    title: "CodeXpress 2.0 — 100 Days of Code Challenge",
+    issuer: "AITR-ACM and ACM-W",
+    icon: "code",
+  },
 ];
 
 export const certificates = [
@@ -106,16 +112,19 @@ export const certificates = [
     title: "CodeXpress 2.0 — 100 Days of Code Challenge",
     issuer: "AITR-ACM and ACM-W",
     icon: "code",
+    link: "https://drive.google.com/file/d/1rKEySzDH-6WD7h5OGKSvTt-TzY5yxSbI/view?usp=sharing",
   },
   {
     title: "NPTEL — Database Management System (DBMS)",
-    issuer: "Ranked Top 2% among 7000+ candidates",
+    issuer: "NPTEL Certified",
     icon: "database",
+    link: "https://drive.google.com/file/d/1iBzNLvXGw41OQogIrBvOGMiPNr5ZHLdT/view?usp=sharing",
   },
   {
     title: "NPTEL — Python for Data Science",
     issuer: "NPTEL Certified",
     icon: "barChart",
+    link: "https://drive.google.com/file/d/1hraSkujNhp9p8boXbJku-0ZIrAA4KbQc/view?usp=sharing",
   },
 ];
 
@@ -150,5 +159,6 @@ export const navLinks = [
   { label: "Projects", href: "#projects" },
   { label: "GitHub", href: "#github" },
   { label: "Achievements", href: "#achievements" },
+  { label: "Certificates", href: "#certificates" },
   { label: "Contact", href: "#contact" },
 ];

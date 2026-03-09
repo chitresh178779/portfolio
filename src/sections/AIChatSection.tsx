@@ -44,7 +44,7 @@ export default function AIChatSection() {
     };
 
     return (
-        <section id="chat" className="section-dark py-[60px] md:py-[120px] px-8 sm:px-12 md:px-[8vw] lg:px-[10vw] xl:px-[12vw] 2xl:px-[14vw] border-t border-[#2a2a2a] overflow-hidden relative z-10">
+        <section id="chat" className="section-dark mt-16 md:mt-24 py-[60px] md:py-[120px] px-8 sm:px-12 md:px-[8vw] lg:px-[10vw] xl:px-[12vw] 2xl:px-[14vw] border-t border-[#2a2a2a] overflow-hidden relative z-10">
             <div className="max-w-[1200px] mx-auto">
                 <SectionWrapper>
                     <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-16">
@@ -66,9 +66,10 @@ export default function AIChatSection() {
                                 <button
                                     key={q}
                                     onClick={() => handleSend(q)}
+                                    suppressHydrationWarning
                                     className="group block w-full text-left font-mono text-sm px-6 py-5 border border-[#2a2a2a] rounded-xl text-[#7a7a7a] hover:text-[#efece6] hover:border-[rgba(255,255,255,0.12)] hover:bg-[rgba(255,255,255,0.03)] transition-all duration-200"
                                 >
-                                    <span className="opacity-50 mr-2 group-hover:opacity-100 transition-opacity duration-200">→</span>
+                                    <span className="opacity-50 mr-2 group-hover:opacity-100 transition-opacity duration-200" suppressHydrationWarning>→</span>
                                     {q}
                                 </button>
                             ))}
@@ -115,23 +116,26 @@ export default function AIChatSection() {
                                 <form
                                     onSubmit={(e) => { e.preventDefault(); handleSend(input); }}
                                     className="p-3 border-t border-[#2a2a2a] bg-[#0a0a0a]"
+                                    suppressHydrationWarning
                                 >
-                                    <div className="flex relative items-center">
-                                        <span className="absolute text-[#7a7a7a] font-mono text-sm" style={{ left: '16px' }}>{'>'}</span>
+                                    <div className="flex relative items-center" suppressHydrationWarning>
+                                        <span className="absolute text-[#7a7a7a] font-mono text-sm" style={{ left: '16px' }} suppressHydrationWarning>{'>'}</span>
                                         <input
                                             type="text"
                                             value={input}
                                             onChange={(e) => setInput(e.target.value)}
                                             placeholder="Enter command..."
                                             style={{ paddingLeft: '36px' }}
+                                            suppressHydrationWarning
                                             className="w-full bg-transparent pr-12 py-2 font-mono text-sm text-[#efece6] focus:outline-none placeholder-[#4a4a4a]"
                                         />
                                         <button
                                             type="submit"
                                             disabled={!input.trim() || isTyping}
+                                            suppressHydrationWarning
                                             className="absolute right-2 p-1.5 text-[#7a7a7a] hover:text-[#efece6] disabled:opacity-50 transition-colors"
                                         >
-                                            <Send size={14} />
+                                            <Send size={14} suppressHydrationWarning />
                                         </button>
                                     </div>
                                 </form>

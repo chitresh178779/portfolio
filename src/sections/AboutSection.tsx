@@ -7,7 +7,7 @@ export default function AboutSection() {
     return (
         <section
             id="about"
-            className="section-dark mt-16 md:mt-24 py-[60px] md:py-[120px] px-8 sm:px-12 md:px-[8vw] lg:px-[10vw] xl:px-[12vw] 2xl:px-[14vw] overflow-hidden relative z-10"
+            className="section-dark mt-16 md:mt-24 py-[60px] md:py-[120px] px-12 sm:px-20 md:px-32 lg:px-40 xl:px-56 2xl:px-72 overflow-hidden relative z-10"
         >
             <div className="max-w-[1400px] w-full mx-auto">
 
@@ -60,9 +60,9 @@ export default function AboutSection() {
                                     Full-Stack Development
                                 </h3>
                                 <p className="text-[#a09c95] group-hover:text-[#d0cdc7] text-base md:text-lg leading-relaxed max-w-lg font-light transform group-hover:translate-x-4 transition-all duration-500 delay-75">
-                                    From frontend interactions to backend APIs, 
-                                    I build complete web solutions using React, 
-                                    Next.js, Django, and modern databases designed 
+                                    From frontend interactions to backend APIs,
+                                    I build complete web solutions using React,
+                                    Next.js, Django, and modern databases designed
                                     for scalability and production reliability.
                                 </p>
                             </div>
