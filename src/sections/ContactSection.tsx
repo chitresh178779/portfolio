@@ -102,6 +102,7 @@ export default function ContactSection() {
                                 className="flex flex-col gap-5 text-left w-full"
                                 onSubmit={handleSubmit(onSubmit)}
                                 noValidate
+                                suppressHydrationWarning
                             >
                                 {/* Name Field */}
                                 <div>
@@ -115,6 +116,7 @@ export default function ContactSection() {
                                             type="text"
                                             placeholder="Your name"
                                             {...register("name", { required: "Name is required" })}
+                                            suppressHydrationWarning
                                             style={{ paddingLeft: '48px' }}
                                             className={`w-full h-12 bg-[rgba(0,0,0,0.25)] rounded-[10px] pr-5 font-mono text-sm text-[#efece6] placeholder:text-[#555] transition-all duration-250 ease-out outline-none border ${errors.name
                                                 ? "border-[#ff4444]/50 focus:border-[#ff4444]/70"
@@ -155,6 +157,7 @@ export default function ContactSection() {
                                                     message: "Invalid email address",
                                                 },
                                             })}
+                                            suppressHydrationWarning
                                             style={{ paddingLeft: '48px' }}
                                             className={`w-full h-12 bg-[rgba(0,0,0,0.25)] rounded-[10px] pr-5 font-mono text-sm text-[#efece6] placeholder:text-[#555] transition-all duration-250 ease-out outline-none border ${errors.email
                                                 ? "border-[#ff4444]/50 focus:border-[#ff4444]/70"
@@ -195,6 +198,7 @@ export default function ContactSection() {
                                                     return wordCount >= 10 || "Please write at least 10 words describing your project";
                                                 },
                                             })}
+                                            suppressHydrationWarning
                                             style={{ paddingLeft: '48px' }}
                                             className={`w-full min-h-[140px] bg-[rgba(0,0,0,0.25)] rounded-[10px] pr-5 py-4 font-mono text-sm text-[#efece6] placeholder:text-[#555] transition-all duration-250 ease-out outline-none resize-none leading-relaxed border ${errors.message
                                                 ? "border-[#ff4444]/50 focus:border-[#ff4444]/70"
@@ -236,6 +240,7 @@ export default function ContactSection() {
                                 {/* Submit Button */}
                                 <motion.button
                                     type="submit"
+                                    suppressHydrationWarning
                                     disabled={isSubmitting || submitted}
                                     className={`w-full flex items-center justify-center gap-2 mt-8 tracking-wide font-medium text-base py-[16px] px-[26px] rounded-[10px] transition-all duration-300 border cursor-pointer ${isSubmitting
                                         ? "bg-black text-[#7a7a7a] border-[rgba(255,255,255,0.08)] cursor-wait"
