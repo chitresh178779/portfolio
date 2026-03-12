@@ -90,7 +90,7 @@ export const achievements = [
     title: "Kriyeta 4.0",
     type: "Hackathon",
     description: "Advanced to the second round of a national-level innovation-focused tech competition.",
-    role: "Participant – Selected in Round 2",
+    role: "Finalist – Selected in Round 2",
     icon: "trophy",
   },
   {
@@ -101,15 +101,17 @@ export const achievements = [
     icon: "brain",
   },
   {
-    title: "CodeXpress 2.0 — 100 Days of Code Challenge",
-    issuer: "AITR-ACM and ACM-W",
+    title: "CodeXpress 2.0",
+    type: "Competitive Programming",
+    description: "100 Days of Code Challenge",
+    role: "Completed the challenge with consistent coding for 100 days ",
     icon: "code",
   },
 ];
 
 export const certificates = [
   {
-    title: "CodeXpress 2.0 — 100 Days of Code Challenge",
+    title: "CodeXpress 2.0",
     issuer: "AITR-ACM and ACM-W",
     icon: "code",
     link: "https://drive.google.com/file/d/1rKEySzDH-6WD7h5OGKSvTt-TzY5yxSbI/view?usp=sharing",

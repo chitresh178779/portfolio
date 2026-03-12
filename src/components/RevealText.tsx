@@ -38,7 +38,7 @@ export default function RevealText({ text, className = "", delay = 0 }: RevealTe
                     delay: delay,
                     scrollTrigger: {
                         trigger: containerRef.current,
-                        start: "top 90%",
+                        start: "top 80%",
                         toggleActions: "play reverse play reverse",
                     },
                 }

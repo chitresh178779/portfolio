@@ -7,29 +7,29 @@ import { Award, Code, Database, BarChart, FileBadge } from "lucide-react";
 export default function CertificatesSection() {
     const getIcon = (iconName: string) => {
         switch (iconName) {
-            case "code": return <Code size={24} className="text-[#7a7a7a] group-hover:text-[#efece6] transition-colors" />;
-            case "database": return <Database size={24} className="text-[#7a7a7a] group-hover:text-[#efece6] transition-colors" />;
-            case "barChart": return <BarChart size={24} className="text-[#7a7a7a] group-hover:text-[#efece6] transition-colors" />;
-            default: return <Award size={24} className="text-[#7a7a7a] group-hover:text-[#efece6] transition-colors" />;
+            case "code": return <Code size={20} className="text-[#7a7a7a] group-hover:text-[#efece6] transition-colors" />;
+            case "database": return <Database size={20} className="text-[#7a7a7a] group-hover:text-[#efece6] transition-colors" />;
+            case "barChart": return <BarChart size={20} className="text-[#7a7a7a] group-hover:text-[#efece6] transition-colors" />;
+            default: return <Award size={20} className="text-[#7a7a7a] group-hover:text-[#efece6] transition-colors" />;
         }
     };
 
     return (
-        <section id="certificates" className="section-dark mt-16 md:mt-24 py-[60px] md:py-[120px] px-12 sm:px-20 md:px-32 lg:px-40 xl:px-56 2xl:px-72 border-t border-[#2a2a2a] overflow-hidden relative z-10">
+        <section id="certificates" className="section-dark mt-16 md:mt-24 py-[100px] md:py-[200px] px-12 sm:px-20 md:px-32 lg:px-40 xl:px-56 2xl:px-72 border-t border-[#2a2a2a] overflow-hidden relative z-10">
             <div className="max-w-[1400px] w-full mx-auto">
                 <SectionWrapper>
                     <RevealText
                         text="CERTIFICATIONS"
-                        className="heading-section text-[2.5rem] sm:text-4xl md:text-5xl lg:text-6xl tracking-widest mb-12 md:mb-20"
+                        className="heading-section text-[2.5rem] sm:text-3xl md:text-5xl lg:text-6xl tracking-widest mb-12 md:mb-20"
                     />
                 </SectionWrapper>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {certificates.map((cert: any, index: number) => (
                         <SectionWrapper key={cert.title} delay={0.1 * index} className="h-full">
-                            <a 
-                                href={cert.link || "#"} 
-                                target="_blank" 
+                            <a
+                                href={cert.link || "#"}
+                                target="_blank"
                                 rel="noreferrer"
                                 className="group block h-full bg-[#111111]/80 border border-[#2a2a2a] rounded-2xl p-8 hover:bg-[#1a1a1a] hover:border-[rgba(255,255,255,0.12)] transition-all duration-300 shadow-lg cursor-pointer"
                             >
