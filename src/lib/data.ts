@@ -7,7 +7,7 @@ export const personalInfo = {
   github: "https://github.com/Chitresh178779",
   linkedin: "https://www.linkedin.com/in/chitresh-gurjar-aa2a23304",
   location: "Indore, M.P., India",
-  resume: "https://drive.google.com/file/d/14h-ho9FIwLZGBBEPLP16hdraxueLt4vk/view?usp=sharing", // Update this path to your actual resume file in the public folder
+  resume: "https://drive.google.com/file/d/14h-ho9FIwLZGBBEPLP16hdraxueLt4vk/view?usp=sharing", 
 };
 
 export const education = [
@@ -37,7 +37,7 @@ export const projects = [
     github: "https://github.com/Chitresh178779/DevPulse-V0",
     live: "#",
     demo: "",
-    image: "/projects/devpulse.png",
+    image: "./public/devpulse.png",
     color: "#38bdf8",
   },
   {

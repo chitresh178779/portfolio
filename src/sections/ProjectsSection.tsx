@@ -88,13 +88,16 @@ export default function ProjectsSection() {
                                     </div>
 
                                     {/* Right: Massive Abstract Number/Visual Placeholder */}
-                                    <div className="md:col-span-6 bg-[#141414] min-h-[250px] sm:min-h-[300px] md:min-h-[500px] flex items-center justify-center p-8 rounded-xl border border-[#2a2a2a] group">
-                                        <div className="heading-display text-[10rem] sm:text-[15rem] md:text-[20rem] text-[#1a1a1a] select-none group-hover:scale-105 transition-transform duration-500 ease-out">
-                                            0{index + 1}
+                                    <div className="md:col-span-6 bg-[#141414] min-h-[250px] sm:min-h-[300px] md:min-h-[300px] flex items-center justify-center p-8 rounded-xl border border-[#2a2a2a] group">
+                                            <img
+                                                src={`/projects/project-${index+1}.png`}
+                                                alt="Project Preview"
+                                                className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500 ease-out"
+                                            />
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            
                         </SectionWrapper>
                     ))}
                 </div>
