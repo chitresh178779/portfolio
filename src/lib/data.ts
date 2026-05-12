@@ -7,7 +7,7 @@ export const personalInfo = {
   github: "https://github.com/Chitresh178779",
   linkedin: "https://www.linkedin.com/in/chitresh-gurjar-aa2a23304",
   location: "Indore, M.P., India",
-  resume: "https://drive.google.com/file/d/14h-ho9FIwLZGBBEPLP16hdraxueLt4vk/view?usp=sharing", 
+  resume: "https://drive.google.com/file/d/14h-ho9FIwLZGBBEPLP16hdraxueLt4vk/view?usp=sharing",
 };
 
 export const education = [
@@ -36,7 +36,7 @@ export const projects = [
       "A DevEx productivity hub reducing context switching through an integrated developer dashboard. Features decoupled React + Django REST architecture, GitHub analytics (commit trends, merge time, health score), and AI Code Auditor using Gemini API for security and performance analysis.",
     github: "https://github.com/Chitresh178779/DevPulse-V0",
     live: "#",
-    demo: "",
+    demo: "https://youtu.be/lfY8ToFTFD0",
     image: "./public/devpulse.png",
     color: "#38bdf8",
   },
