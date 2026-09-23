@@ -26,21 +26,21 @@ export default function ProjectsSection() {
                             <div className="flex flex-col gap-7">
                                 {/* Project Header Row */}
                                 <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b border-[#2a2a2a] pb-10 mb-8 md:mb-12">
-                                    <div className="flex flex-col md:flex-row gap-2 md:items-baseline md:gap-8">
-                                        <span className="heading-display text-3xl sm:text-4xl md:text-6xl lg:text-7xl text-[#7a7a7a] font-bold tracking-tighter">
+                                    <div className="flex flex-col md:flex-row gap-2 md:items-baseline md:gap-8 min-w-0">
+                                        <span className="heading-display text-3xl sm:text-4xl md:text-6xl lg:text-7xl text-[#7a7a7a] font-bold tracking-tighter shrink-0">
                                             (0{index + 1})
                                         </span>
                                         <h3 className="heading-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tighter uppercase text-[#efece6]">
                                             {project.title}
                                         </h3>
                                     </div>
-                                    <div className="flex flex-wrap items-center gap-4">
+                                    <div className="flex flex-wrap sm:flex-nowrap items-center gap-3 md:gap-4 shrink-0">
                                         {project.live && (
                                             <a
                                                 href={project.live}
                                                 target="_blank"
                                                 rel="noreferrer"
-                                                className="btn-pill btn-light uppercase text-xs"
+                                                className="btn-pill btn-light uppercase text-xs whitespace-nowrap !px-6 !py-3 sm:!px-8 sm:!py-3.5"
                                             >
                                                 Live Site <MoveUpRight size={14} />
                                             </a>
@@ -50,7 +50,7 @@ export default function ProjectsSection() {
                                                 href={project.demo}
                                                 target="_blank"
                                                 rel="noreferrer"
-                                                className="btn-pill btn-outline-light uppercase text-xs"
+                                                className="btn-pill btn-outline-light uppercase text-xs whitespace-nowrap !px-6 !py-3 sm:!px-8 sm:!py-3.5"
                                             >
                                                 <Play size={14} /> Demo Video
                                             </a>
@@ -60,7 +60,7 @@ export default function ProjectsSection() {
                                                 href={project.github}
                                                 target="_blank"
                                                 rel="noreferrer"
-                                                className="btn-pill btn-outline-light uppercase text-xs"
+                                                className="btn-pill btn-outline-light uppercase text-xs whitespace-nowrap !px-6 !py-3 sm:!px-8 sm:!py-3.5"
                                             >
                                                 <Github size={14} /> Repo
                                             </a>

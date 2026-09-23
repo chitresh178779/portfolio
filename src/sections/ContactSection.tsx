@@ -73,13 +73,13 @@ export default function ContactSection() {
                 <div className="w-full flex flex-col items-center justify-center mt-16 md:mt-24 text-center mx-auto">
                     <SectionWrapper delay={0.2} className="w-full max-w-[650px] mx-auto">
                         <motion.div
-                            className="w-full rounded-2xl p-6 sm:p-8 md:p-10 flex flex-col items-center text-center"
+                            className="w-full rounded-2xl px-6 sm:px-10 md:px-12 py-10 sm:py-12 md:py-14 flex flex-col items-center text-center"
                             style={{
                                 background: "rgba(255, 255, 255, 0.04)",
                                 backdropFilter: "blur(12px)",
                                 WebkitBackdropFilter: "blur(12px)",
                                 border: "1px solid rgba(255, 255, 255, 0.08)",
-                                borderRadius: "16px",
+                                borderRadius: "20px",
                                 boxShadow: "0 8px 32px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(255,255,255,0.03) inset",
                             }}
                             initial={{ opacity: 0, y: 30 }}
@@ -88,18 +88,18 @@ export default function ContactSection() {
                             transition={{ duration: 0.7, ease: "easeOut" }}
                         >
                             {/* Heading */}
-                            <h3 className="heading-display text-3xl md:text-4xl text-[#efece6] mb-3 text-center">
+                            <h3 className="heading-display text-3xl md:text-4xl text-[#efece6] mb-3 text-center !leading-snug tracking-tight">
                                 Have a Project in Mind?
                             </h3>
 
                             {/* Subtitle */}
-                            <p className="font-mono text-sm text-[#7a7a7a] mb-10 max-w-[400px] leading-relaxed">
+                            <p className="font-mono text-sm text-[#7a7a7a] mb-8 md:mb-10 max-w-[440px] leading-relaxed">
                                 Tell me about your idea and let&apos;s build something great.
                             </p>
 
                             {/* Form */}
                             <form
-                                className="flex flex-col gap-5 text-left w-full"
+                                className="flex flex-col gap-6 text-left w-full"
                                 onSubmit={handleSubmit(onSubmit)}
                                 noValidate
                                 suppressHydrationWarning
@@ -109,16 +109,16 @@ export default function ContactSection() {
                                     <div className="relative">
                                         <User
                                             className="absolute pointer-events-none text-[#555]"
-                                            style={{ left: '16px', top: '50%', transform: 'translateY(-50%)' }}
-                                            size={16}
+                                            style={{ left: '18px', top: '50%', transform: 'translateY(-50%)' }}
+                                            size={17}
                                         />
                                         <input
                                             type="text"
                                             placeholder="Your name"
                                             {...register("name", { required: "Name is required" })}
                                             suppressHydrationWarning
-                                            style={{ paddingLeft: '48px' }}
-                                            className={`w-full h-12 bg-[rgba(0,0,0,0.25)] rounded-[10px] pr-5 font-mono text-sm text-[#efece6] placeholder:text-[#555] transition-all duration-250 ease-out outline-none border ${errors.name
+                                            style={{ paddingLeft: '50px' }}
+                                            className={`w-full h-14 bg-[rgba(0,0,0,0.25)] rounded-[12px] pr-5 font-mono text-sm text-[#efece6] placeholder:text-[#555] transition-all duration-250 ease-out outline-none border ${errors.name
                                                 ? "border-[#ff4444]/50 focus:border-[#ff4444]/70"
                                                 : "border-[rgba(255,255,255,0.08)] focus:border-[rgba(255,255,255,0.2)]"
                                                 } focus:shadow-[0_0_0_2px_rgba(255,255,255,0.04)]`}
@@ -144,8 +144,8 @@ export default function ContactSection() {
                                     <div className="relative">
                                         <Mail
                                             className="absolute pointer-events-none text-[#555]"
-                                            style={{ left: '16px', top: '50%', transform: 'translateY(-50%)' }}
-                                            size={16}
+                                            style={{ left: '18px', top: '50%', transform: 'translateY(-50%)' }}
+                                            size={17}
                                         />
                                         <input
                                             type="email"
@@ -158,8 +158,8 @@ export default function ContactSection() {
                                                 },
                                             })}
                                             suppressHydrationWarning
-                                            style={{ paddingLeft: '48px' }}
-                                            className={`w-full h-12 bg-[rgba(0,0,0,0.25)] rounded-[10px] pr-5 font-mono text-sm text-[#efece6] placeholder:text-[#555] transition-all duration-250 ease-out outline-none border ${errors.email
+                                            style={{ paddingLeft: '50px' }}
+                                            className={`w-full h-14 bg-[rgba(0,0,0,0.25)] rounded-[12px] pr-5 font-mono text-sm text-[#efece6] placeholder:text-[#555] transition-all duration-250 ease-out outline-none border ${errors.email
                                                 ? "border-[#ff4444]/50 focus:border-[#ff4444]/70"
                                                 : "border-[rgba(255,255,255,0.08)] focus:border-[rgba(255,255,255,0.2)]"
                                                 } focus:shadow-[0_0_0_2px_rgba(255,255,255,0.04)]`}
@@ -185,12 +185,12 @@ export default function ContactSection() {
                                     <div className="relative">
                                         <MessageSquare
                                             className="absolute pointer-events-none text-[#555]"
-                                            style={{ left: '16px', top: '16px' }}
-                                            size={16}
+                                            style={{ left: '18px', top: '18px' }}
+                                            size={17}
                                         />
                                         <textarea
                                             placeholder="Tell me about your project..."
-                                            rows={5}
+                                            rows={6}
                                             {...register("message", {
                                                 required: "Message is required",
                                                 validate: (value) => {
@@ -199,8 +199,8 @@ export default function ContactSection() {
                                                 },
                                             })}
                                             suppressHydrationWarning
-                                            style={{ paddingLeft: '48px' }}
-                                            className={`w-full min-h-[140px] bg-[rgba(0,0,0,0.25)] rounded-[10px] pr-5 py-4 font-mono text-sm text-[#efece6] placeholder:text-[#555] transition-all duration-250 ease-out outline-none resize-none leading-relaxed border ${errors.message
+                                            style={{ paddingLeft: '50px' }}
+                                            className={`w-full min-h-[180px] bg-[rgba(0,0,0,0.25)] rounded-[12px] pr-5 py-4 font-mono text-sm text-[#efece6] placeholder:text-[#555] transition-all duration-250 ease-out outline-none resize-none leading-relaxed border ${errors.message
                                                 ? "border-[#ff4444]/50 focus:border-[#ff4444]/70"
                                                 : "border-[rgba(255,255,255,0.08)] focus:border-[rgba(255,255,255,0.2)]"
                                                 } focus:shadow-[0_0_0_2px_rgba(255,255,255,0.04)]`}
@@ -242,7 +242,7 @@ export default function ContactSection() {
                                     type="submit"
                                     suppressHydrationWarning
                                     disabled={isSubmitting || submitted}
-                                    className={`w-full flex items-center justify-center gap-2 mt-8 tracking-wide font-medium text-base py-[16px] px-[26px] rounded-[10px] transition-all duration-300 border cursor-pointer ${isSubmitting
+                                    className={`w-full flex items-center justify-center gap-2 mt-2 tracking-wide font-medium text-base py-[16px] px-[28px] rounded-[12px] transition-all duration-300 border cursor-pointer ${isSubmitting
                                         ? "bg-black text-[#7a7a7a] border-[rgba(255,255,255,0.08)] cursor-wait"
                                         : submitted
                                             ? "bg-[#27c93f] text-black border-[#27c93f]"
